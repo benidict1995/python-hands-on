@@ -12,3 +12,10 @@ print("\tWith tab")
 print("\n\n")
 print("Without newline")
 print("With \nnewline")
+
+print("\n\n")
+language = "' python '"
+print(language)
+print(language.rstrip())
+print(language.lstrip())
+print(language.strip())
