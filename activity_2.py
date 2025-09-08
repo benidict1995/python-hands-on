@@ -10,3 +10,10 @@ print(f"actual name: {name}")
 print(f"lower case: {name.lower()}")
 print(f"upper case: {name.upper()}")
 print(f"title case: {name.title()}")
+
+print("\n")
+print("Activity 2: C")
+name = "Uzumaki Naruto"
+message = '"Tande bayo!."'
+quote1 = f"{name} once said, {message}"
+print(quote1)
