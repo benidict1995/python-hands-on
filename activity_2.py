@@ -17,3 +17,8 @@ name = "Uzumaki Naruto"
 message = '"Tande bayo!."'
 quote1 = f"{name} once said, {message}"
 print(quote1)
+
+print("\n")
+print("Activity 2: D")
+message = 'Tande bayo!.'
+print(message.removesuffix('!.'))
