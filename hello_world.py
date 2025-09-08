@@ -1,1 +1,2 @@
-print("Hellow World!")
+message = "Hello World in variable!"
+print(message)
