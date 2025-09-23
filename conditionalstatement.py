@@ -4,6 +4,8 @@ if age > 18:
 else:
     print("You are not a voter!")
 
+print("\n\n")
+
 ride_age = 5
 if ride_age < 4:
     print("Your admission cost is $0.")
@@ -23,8 +25,25 @@ else:
 
 print(f"Your admission cost base on the age is ${price}.")
 
+print("\n\n")
+
 requested_toppings = ['mushrooms', 'extra cheese']
 if 'mushrooms' in requested_toppings:
     print("Mushrooms is already added.")
-if 'pepperoni' is not requested_toppings:
+if 'pepperoni' != requested_toppings:
     print("Adding pepperoni to the list.")
+
+print("\n\n")
+
+available_toppings = ['mushrooms', 'olives', 'green peppers',
+'pepperoni', 'pineapple', 'extra cheese']
+
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print(f"Adding {requested_topping}")
+    else:
+        print(f"We don't have {requested_topping}")
+
+print("\nFinish making your pizza!")
