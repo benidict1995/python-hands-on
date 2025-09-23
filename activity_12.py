@@ -45,3 +45,18 @@ else:
     stage_of_life = "elder"
 
 print(f"#4 the person is an {stage_of_life}.")
+
+print("\n")
+#5
+favorite_fruits = ['apple', 'orange', 'grapes']
+if 'apple' in favorite_fruits:
+    print("#5 You really like apple!")
+
+if 'orange' in favorite_fruits:
+    print("#5 You really like orange!")
+
+if 'grapes' in favorite_fruits:
+    print("#5 You really like grapes!")
+
+if ('banana' in favorite_fruits) == False:
+    print("#5 Banana is not your favorite!")
