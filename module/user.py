@@ -24,3 +24,21 @@ class User:
     def display_login_attemp(self):
         """Displaying login attemp..."""
         return self.attemp
+    
+class Admin:
+    """Admin class"""
+    def __init__(self, admin_name):
+        self.admin_name = admin_name
+
+    def show_admin_name(self):
+        print(f"Hi Admin {self.admin_name.title()}")
+
+class Privileges:
+    """Privileges class"""
+    def __init__(self, privilege):
+        self.privilege = privilege
+
+    def show_privilege(self):
+        """Show privilege"""
+        print(self.privilege)
+        
