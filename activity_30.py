@@ -31,24 +31,55 @@ from random import choice
 #     twenty_sided.roll_die()
 
 #2
+# combination = [str(i) for i in range(10)] + list(string.ascii_lowercase)
+# class Lottery:
+#     """Init Lottery Class"""
+#     def __init__(self, data = []):
+#         self.data = data
+    
+
+#     def draw(self):
+#         """Draw lottery"""
+        
+#         result = ""
+#         x = 1
+#         while x < 5:
+#             result += choice(combination).capitalize()
+#             x += 1
+
+#         print(f"Final draw: {result}")
 
 
+# lottery = Lottery()
+# lottery.draw()
+
+#3
 combination = [str(i) for i in range(10)] + list(string.ascii_lowercase)
 class Lottery:
     """Init Lottery Class"""
-    def __init__(self, data = []):
+    def __init__(self, data = [], isWinner = False, drawCount = 0, bet = "25BN"):
         self.data = data
+        self.isWinner = isWinner
+        self.drawCount = drawCount
+        self.bet = bet
     
 
     def draw(self):
         """Draw lottery"""
-        
-        result = ""
-        x = 1
-        while x < 5:
-            result += choice(combination).capitalize()
-            x += 1
 
+        while not self.isWinner:     
+            result = ""
+            x = 1
+            while x < 5:
+                result += choice(combination).capitalize()
+                x += 1
+          
+            self.drawCount += 1
+            self.isWinner = result == self.bet
+
+
+        print(f"Draw count: {self.drawCount}")
+        print(f"Your bet: {self.bet}")
         print(f"Final draw: {result}")
 
 
