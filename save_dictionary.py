@@ -4,11 +4,13 @@ import json
 user_info = {'first_name': '', 'last_name': '', 'birthday': ''}
 firstName = input("Enter your Firstname: ")
 lastName = input("Enter your Lastname: ")
-birthday = input("Enter your Birthday: ")
+username = input("Enter your Username: ")
+password = input("Enter your password: ")
 
 user_info["first_name"] = firstName
 user_info["last_name"] = lastName
-user_info["birthday"] = birthday
+user_info["username"] = username
+user_info["password"] = password
 
 path = Path("file/user_info.json")
 contents = json.dumps(user_info)
